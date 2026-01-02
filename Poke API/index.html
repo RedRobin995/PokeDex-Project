@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+  <header>
+    <nav class="nav">
+      <img src="./img/logo.png" alt="Logo Pokédex">
+
+      <ul class="nav-list">
+        <!-- VER TODOS -->
+        <li class="nav-item">
+          <button class="btn btn-header tipo-btn" id="ver-todos">
+            Ver todos
+          </button>
+        </li>
+
+        <!-- TIPOS -->
+        <li class="nav-item"><button class="btn btn-header tipo-btn normal" id="normal">Normal</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn fire" id="fire">Fire</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn water" id="water">Water</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn grass" id="grass">Grass</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn electric" id="electric">Electric</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn ice" id="ice">Ice</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn fighting" id="fighting">Fighting</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn poison" id="poison">Poison</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn ground" id="ground">Ground</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn flying" id="flying">Flying</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn psychic" id="psychic">Psychic</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn bug" id="bug">Bug</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn rock" id="rock">Rock</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn ghost" id="ghost">Ghost</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn dark" id="dark">Dark</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn dragon" id="dragon">Dragon</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn steel" id="steel">Steel</button></li>
+        <li class="nav-item"><button class="btn btn-header tipo-btn fairy" id="fairy">Fairy</button></li>
+      </ul>
+
+      <!-- BOTÓN SHINY (NO es filtro) -->
+      <button class="btn btn-header" id="toggle-shiny">
+        Shiny
+      </button>
+
+    </nav>
+  </header>
+
+  <main>
+    <div id="todos">
+      <div class="pokemon-todos" id="listaPokemon">
+        <!-- Los Pokémon se inyectan aquí por JS -->
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
